@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Database Ques</string>
+    <string name="sqlite_demo">SQLITE DEMO</string>
+    <string name="add_dummy_data">ADD Dummy Data</string>
+    <string name="name">Name</string>
+
+    <string name="contact">Contact</string>
+    <string name="address">Address</string>
+    <string name="update_details">Update Details</string>
+</resources>

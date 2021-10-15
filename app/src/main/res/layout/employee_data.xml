@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:layout_margin="@dimen/margin_4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/empDetailsContraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/empNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/heading_text_size_18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/empContactTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Contact"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/empNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/empNameTextView" />
+
+        <TextView
+            android:id="@+id/empAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Address"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/empContactTextView"
+            app:layout_constraintTop_toBottomOf="@+id/empContactTextView" />
+
+        <ImageButton
+            android:id="@+id/editEmpDetailsBtn"
+            android:layout_width="21dp"
+            android:layout_height="23dp"
+            android:background="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toEndOf="@+id/empNameTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <ImageButton
+            android:id="@+id/deleteEmpDetailsBtn"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editEmpDetailsBtn"
+            app:layout_constraintStart_toStartOf="@+id/editEmpDetailsBtn"
+            app:layout_constraintTop_toBottomOf="@+id/editEmpDetailsBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editEmpDetailsConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/empNameEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/heading_text_size_18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/empContactEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:hint="Contact"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/empNameEditTextView"
+            app:layout_constraintTop_toBottomOf="@+id/empNameEditTextView" />
+
+        <EditText
+            android:id="@+id/empAddressEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:hint="Address"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/empContactEditTextView"
+            app:layout_constraintTop_toBottomOf="@+id/empContactEditTextView" />
+
+        <Button
+            android:id="@+id/updateDetailsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Update Details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empAddressEditTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
